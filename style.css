@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+        font-family: "Rubik", sans-serif;
+        list-style: none;
+        text-decoration: none;
+        
+}
+body{
+   /* background: #080808;
+    color: aliceblue; */
+    background-image: url(second.png.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+#main{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding:20px 10px;
+   background: transparent;
+   display: flex;
+   justify-content: space-between;
+   align-items: center; 
+   z-index: 100;
+
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor:default;
+    opacity: 0;
+    animation: slideRight;
+}
+
+.header a{
+font-size: 20px;
+font-weight: 500;
+color: aliceblue;
+display: inline-block;
+text-decoration: none;
+font-weight: 500;
+margin-left:35px;
+transition: .3s;
+opacity: 0;
+animation: slideTop .5s ease forwards;
+
+
+
+}
+.header a:hover{
+   color: #0ef;
+}
+.home{
+    position: relative;
+    width: 50%;
+    justify-content: space-around;
+    height: 100vh;
+   
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding:70px 10% 0 ;
+    
+    
+
+}
+.home-content{
+    color: aliceblue;
+    max-width: 600px;
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    animation: slidebotton is ease forwards;
+    animation-duration: .7s;
+}
+.home-content h3 :nth-of-type(2){
+     margin-bottom: 30px;
+}
+.home-content h3{
+    color: #0ef;
+}
+.home-content h1{
+     font-size: 56px;
+     font-weight: 700px;
+     margin: -3px 0;
+}
+.home-content p{
+    font-size: 20px;
+
+}
+.home-link a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+
+}
+.home-link a:hover{
+    background: #0ef;
+    color: gray;
+    box-shadow: 0 0 20px #0ef;
+    
+
+}
+.btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    font-size: 16px;
+    border-radius: 30px;
+    color: gray;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn-box:hover {
+      box-shadow: 0 0 5px cyan,
+      0 0 25px cyan, 0 0 50px cyan,
+      0 0 100px cyan, 0 0 200px cyan
+
+}
+@keyframes slideRight{
+    0%{
+        transform: translatex(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity:1;
+    }
+}
+@keyframes slideTop{
+    0%{
+        transform: translatey(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0px);
+        opacity:1;
+    }
+}
