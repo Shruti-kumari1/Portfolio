@@ -51,12 +51,33 @@ body {
     margin-left: 35px;
     transition: 0.3s;
     opacity: 0;
-    animation: slideTop 3s ease forwards;
+    animation: slidetop 3s ease forwards;
 }
 
 .header a:hover {
     color: #0ef;
 }
+/* This is the CSS file for styling the portfolio in a dark theme */
+
+/* General Styles */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+}
+
+section {
+    padding: 40px;
+    margin: 20px 0;
+}
+
+
 
 .home {
     position: relative;
@@ -170,9 +191,10 @@ body {
 /* about css */
 .about {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     color: #fff;
     padding: 20px 130px;
+    
 }
 
 .about-main-div h1 {
@@ -180,9 +202,181 @@ body {
     margin: 7px;
     font-weight: 600;
     font-size: 50px;
+    color: #0ef;
+    text-shadow:  0 0 25px   #0ef;
 }
 
 .about-main-div p {
     text-align: center;
     word-spacing: 3px;
+    padding: 10px 200px ;
+    
 }
+.hello{
+    color: #0ef;
+    font-size: x-large;
+    
+}
+/* css skills parts */
+
+/* Style for the Skills Section */
+#skills {
+   
+    color: #0ef;
+    padding: 50px;
+    text-align: center;
+}
+
+#skills h2 {
+    color: #0ef;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill {
+    width: 200px;
+    text-align: center;
+}
+
+.skill h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    height: 20px;
+    background: #333;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.skill-bar::after {
+    content: 'Covered';
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #ff7f50, #ff4500);
+    transition: width 1s;
+}
+/* Style for the Projects Section */
+/* Style for the Projects Section in Dark Mode */
+/* Style for the Projects Section in Dark Mode */
+#projects {
+    /* Dark background */
+    color: #ffffff; /* Light text */
+    padding: 50px;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #0ef; /* Highlighted text color */
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    width: 300px;
+    background: #1e1e1e; /* Darker background for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px); /* Subtle hover effect */
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #0ef;/* Accent border */
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin: 15px;
+    color: #ffcc00; /* Highlighted heading */
+}
+
+.project p {
+    font-size: 1rem;
+    margin: 0 15px 15px;
+    color: #cccccc; /* Softer text color */
+}
+
+.project a {
+    display: block;
+    margin: 15px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #ffffff; /* Light text */
+    background:#0ef; /* Accent color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.project a:hover {
+    background: #0ef; /* Darker hover color */
+}
+
+
+#contact {
+    background-color:  #121212;
+    padding: 50px;
+    text-align: center;
+    color: #0ef;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+form label {
+    font-size: 1rem;
+    color: #0ef;
+}
+
+form input, form textarea {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background: #282828;
+    color: #ffffff;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    background: #ff7f50;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #ff4500;
+}
+
